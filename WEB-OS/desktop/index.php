@@ -79,9 +79,25 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
           <input type="text" class="search" placeholder="Type here to search..." />
         </div>
         <div class="pinned-icons">
-          <div class="pinned-icon" onclick="openfile()">📁</div>
+          <div
+    class="pinned-icon"
+    role="button"
+    tabindex="0"
+    onclick="openfile()"
+    onkeydown="if(event.key==='Enter'||event.key===' '){openfile();}"
+>
+    📁
+</div>
           <div class="pinned-icon">🌐</div>
-          <div class="pinned-icon" onclick="opencode()">🖥️</div>
+    <div
+    class="pinned-icon"
+    role="button"
+    tabindex="0"
+    onclick="opencode()"
+    onkeydown="if(event.key==='Enter'||event.key===' '){opencode();}"
+>
+    🖥️
+</div>
         </div>
         <div class="system-tray">
           <span>🔔</span>
