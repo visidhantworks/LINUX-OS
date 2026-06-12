@@ -54,6 +54,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <iframe 
     src="../filemanager/index.php" 
     id="fileid" 
+    title = "filemanager"
     style="display: none; position: absolute; top: 10%; left: 20%; width: 60%; height: 70%; border: none; box-shadow: 0 0 15px rgba(0,0,0,0.5); border-radius: 10px; z-index: 999;">
   </iframe>
  
@@ -61,6 +62,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
       <iframe 
     src="../code/index.php" 
     id="codeid" 
+    title = 'code'
     scrolling="no"
     style="display: none; position: absolute; top: 5%; left: 5%; width: 95%; height: 80%; border: none; box-shadow: 0 0 15px rgba(0,0,0,0.5); border-radius: 10px; z-index: 999;">
   </iframe>
