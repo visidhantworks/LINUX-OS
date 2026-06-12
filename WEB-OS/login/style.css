@@ -1,0 +1,228 @@
+/* * {
+  border: 1px solid red;
+} */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: linear-gradient(
+    to bottom,
+    rgb(106, 106, 106),
+    rgb(0, 0, 0)
+  ); /* Windows blue gradient */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push bottom bar to the bottom */
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.inner-login-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar {
+  width: 80px; /* Or whatever size you had before */
+  height: 80px; /* Or whatever size you had before */
+  border-radius: 50%;
+  overflow: hidden; /* Clip the image to the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent; /* Remove the placeholder background */
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fills the circle proportionally */
+  border-radius: 50%; /* Make the image a circle */
+}
+.username {
+  font-size: 1.2em;
+  color: white;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.password-input,
+.username-input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 8px;
+  width: 250px;
+  box-sizing: border-box;
+}
+button[type="submit"] {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 0.9em;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.links {
+  margin-top: 0;
+}
+
+button[type="submit"]:hover {
+  text-decoration: underline;
+}
+.password-input input,
+.username-input input{
+  border: none;
+  background: transparent;
+  color: white;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.password-input input::placeholder, 
+.username-input input::placeholder{
+  color: #ccc;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.bottom-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: white;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.left-icons,
+.right-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.left-icons div,
+.right-icons div {
+  cursor: pointer;
+}
+
+.left-icons svg,
+.right-icons svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+/* Align left icons to the left */
+.bottom-bar .left-icons {
+  margin-left: auto; /* Push to the left */
+  margin-right: auto; /* Center horizontally within the bottom bar */
+  justify-content: flex-start; /* Align items to the start of the flex container */
+  position: absolute;
+  left: 20px;
+}
+
+/* Align right icons to the right */
+.bottom-bar .right-icons {
+  margin-left: auto; /* Push to the right */
+  justify-content: flex-end; /* Align items to the end of the flex container */
+  position: absolute;
+  right: 20px;
+}
+
+/* Center the login panel */
+.login-panel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+#userList {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  color: white;
+}
+
+.user-item {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+ul {
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+#userList {
+  position: fixed;
+  bottom: 50px;
+  left: 20px;
+}
+#userList ul li {
+  padding: 10px;
+}
+
+#powerList {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+}
+#powerList ul li {
+  padding: 10px;
+}

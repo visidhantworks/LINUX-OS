@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.settings-window {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(208, 201, 201, 0.65);
+    width: 80%;
+    max-width: 900px;
+    height: 70%;
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-header {
+    background-color: #eee;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.window-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.close-button {
+    color: #333;
+    background-color: #fdd;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.settings-body {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.sidebar {
+    background-color:rgb(172, 162, 162);
+    border-right: 1px solid #eee;
+    padding: 15px;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 10px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li:hover {
+    background-color: #eee;
+}
+
+.settings-content {
+    padding: 15px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.settings-content h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.setting-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.setting-item h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.setting-item button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.setting-item button:hover {
+    background-color: #0056b3;
+}

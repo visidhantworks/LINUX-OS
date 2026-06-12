@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Windows 11 Style Login</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+  <div class="login-panel">
+    <form action="login.php" method="POST" id="loginForm">
+      <div class="inner-login-panel">
+ 
+        <div class="avatar">
+          <img src="user-icon.png" alt="User Avatar"/>
+        </div>
+        <div class="username-input">
+          <input type = "text" name = "username" placeholder ="Username" required/>
+
+        </div> 
+      </div>
+      <div class="password-input">
+        <input type="password" name="pin" placeholder="PIN" required />
+      </div>
+        <button type="submit">Sign In</button>
+
+
+    </form>
+
+    <div class="links">
+      <a href="registration.html">Register User</a>
+    </div>
+
+  </div>
+
+  <div id="userList" style="display: none"></div>
+
+  <div class="bottom-bar">
+    <div class="left-icons" onclick="toggleUser()">
+      <div class="user-switch">
+        <svg viewBox="0 0 24 24">
+          <path fill="currentColor" d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"/>
+        </svg>
+      </div>
+    </div>
+    <div id="powerList" style="display: none">
+      <ul>
+        <li>Shut Down</li>
+        <li>Sleep</li>
+        <li>Restart</li>
+      </ul>
+    </div>
+    <div class="right-icons" onclick="togglePower()">
+      <div class="power">
+        <svg viewBox="0 0 24 24">
+          <path fill="currentColor" d="M12 5V2L8 6l4 4V7c3.31 0 6 2.69 6 6s-2.69 6-6 6s-6-2.69-6-6H6c0 4.42 3.58 8 8 8s8-3.58 8-8c0-4.42-3.58-8-8-8Z"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="switch-user.js"></script>
+</body>
+</html>
