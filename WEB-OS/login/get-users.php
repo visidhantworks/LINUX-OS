@@ -2,12 +2,7 @@
 header('Content-Type: application/json');
 
 require_once dirname(__DIR__, 2) . '/configure.php';
-$conn = new mysqli(
-    DB_HOST,
-    DB_USER,
-    DB_PASS,
-    DB_NAME
-);
+$conn = getDbConnection();
  
 
 if ($conn->connect_error) {
