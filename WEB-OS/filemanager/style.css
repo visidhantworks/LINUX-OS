@@ -156,7 +156,7 @@ textarea#file-editor {
     background-color: #fff;
     color: #000;
     outline: none;
-    border: none;
+     
     user-select: text;
 }
 
