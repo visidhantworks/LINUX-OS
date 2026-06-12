@@ -233,6 +233,8 @@ body{
 </style>
 </head>
 <body>
+  <title>MyOS Desktop</title>
+
 
 <div class="filemanager-window">
 
@@ -245,9 +247,32 @@ body{
 
     <div class="sidebar">
         <ul>
-            <li onclick="loadFiles('home')">🏠 Home</li>
-            <li onclick="loadFiles('downloads')">⬇️ Downloads</li>
-            <li onclick="loadFiles('desktop')">💻 Desktop</li>
+            <li
+    role="button"
+    tabindex="0"
+    onclick="loadFiles('home')"
+    onkeydown="if(event.key==='Enter'||event.key===' '){loadFiles('home');}"
+>
+    🏠 Home
+</li>
+
+<li
+    role="button"
+    tabindex="0"
+    onclick="loadFiles('downloads')"
+    onkeydown="if(event.key==='Enter'||event.key===' '){loadFiles('downloads');}"
+>
+    ⬇️ Downloads
+</li>
+
+<li
+    role="button"
+    tabindex="0"
+    onclick="loadFiles('desktop')"
+    onkeydown="if(event.key==='Enter'||event.key===' '){loadFiles('desktop');}"
+>
+    💻 Desktop
+</li>
         </ul>
     </div>
 
