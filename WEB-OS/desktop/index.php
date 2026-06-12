@@ -48,6 +48,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
       <iframe 
       src="../terminal/terminal.php" 
       id="terminalid" 
+      title= 'Terminal Window'
       style="display: none; position: absolute; top: 10%; left: 20%; width: 60%; height: 70%; border: none; box-shadow: 0 0 15px rgba(0,0,0,0.5); border-radius: 10px; z-index: 999;">
     </iframe>
     <iframe 
