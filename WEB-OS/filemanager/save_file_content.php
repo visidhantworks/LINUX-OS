@@ -11,11 +11,12 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 
 $user_id = $_SESSION['user_id'];
 
+require_once dirname(__DIR__, 2) . '/configure.php';
 $conn = new mysqli(
-    "sql302.infinityfree.com",
-    "if0_42099223",
-    "sidhant1326",
-    "if0_42099223_myos"
+    DB_HOST,
+    DB_USER,
+    DB_PASS,
+    DB_NAME
 );
 if ($conn->connect_error) {
     echo json_encode([

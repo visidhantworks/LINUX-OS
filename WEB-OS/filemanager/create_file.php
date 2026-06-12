@@ -7,14 +7,13 @@ if (!isset($_SESSION['loggedin'])) {
     echo json_encode(['error' => 'Unauthorized']);
     exit;
 }
-
+require_once dirname(__DIR__, 2) . '/configure.php';
 $conn = new mysqli(
-    "sql302.infinityfree.com",
-    "if0_42099223",
-    "sidhant1326",
-    "if0_42099223_myos"
+    DB_HOST,
+    DB_USER,
+    DB_PASS,
+    DB_NAME
 );
-
 $user_id = $_SESSION['user_id'];
 
 $folder = $_POST['folder'] ?? '';
