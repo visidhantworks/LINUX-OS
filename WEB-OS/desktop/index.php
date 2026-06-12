@@ -32,7 +32,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
           <span>Document.txt</span>
         </div> -->
 
-        <div class="icon" onclick="openTerminal()" >
+ <div
+    class="icon"
+    role="button"
+    tabindex="0"
+    onclick="openTerminal()"
+    onkeydown="if(event.key==='Enter'||event.key===' '){openTerminal();}"
+>
+
           <img src="terminal.svg" alt="Document" />
           <span>Terminal</span>
         </div>
