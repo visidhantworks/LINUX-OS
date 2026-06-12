@@ -17,20 +17,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
   </head>
   <body>
     <div class="desktop">
-<!--       
-      <div class="icon-grid">
-        <div class="icon">
-          <img src="recyclebin.png" alt="Recycle Bin" />
-          <span>Recycle Bin</span>
-        </div>
-        <div class="icon">
-          <img src="myfolder.png" alt="My Folder" />
-          <span>My Folder</span>
-        </div>
-        <div class="icon">
-          <img src="documentt.png" alt="Document" />
-          <span>Document.txt</span>
-        </div> -->
+ 
 
  <div
     class="icon"
