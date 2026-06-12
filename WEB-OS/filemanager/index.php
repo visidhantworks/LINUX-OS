@@ -190,7 +190,16 @@ body{
     padding:10px 15px;
     font-weight:600;
 }
-
+.sidebar button {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+}
 .modal-body {
     padding:20px;
 }
@@ -247,37 +256,29 @@ body{
 
     <div class="body">
 
-    <div class="sidebar">
-        <ul>
-            <li
-    role="button"
-    tabindex="0"
-    onclick="loadFiles('home')"
-    onkeydown="if(event.key==='Enter'||event.key===' '){loadFiles('home');}"
->
-    🏠 Home
-</li>
+ 
+          <div class="sidebar">
+    <ul>
+        <li>
+            <button type="button" onclick="loadFiles('home')">
+                🏠 Home
+            </button>
+        </li>
 
-<li
-    role="button"
-    tabindex="0"
-    onclick="loadFiles('downloads')"
-    onkeydown="if(event.key==='Enter'||event.key===' '){loadFiles('downloads');}"
->
-    ⬇️ Downloads
-</li>
+        <li>
+            <button type="button" onclick="loadFiles('downloads')">
+                ⬇️ Downloads
+            </button>
+        </li>
 
-<li
-    role="button"
-    tabindex="0"
-    onclick="loadFiles('desktop')"
-    onkeydown="if(event.key==='Enter'||event.key===' '){loadFiles('desktop');}"
->
-    💻 Desktop
-</li>
-        </ul>
-    </div>
-
+        <li>
+            <button type="button" onclick="loadFiles('desktop')">
+                💻 Desktop
+            </button>
+        </li>
+    </ul>
+</div>
+ 
     <div style="flex:1;display:flex;flex-direction:column;">
 
         <div class="toolbar">
