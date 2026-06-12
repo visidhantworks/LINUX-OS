@@ -1,4 +1,7 @@
  <head>
+    <title>MyOS Desktop</title>
+
+
     <style>
 *{
     margin:0;
@@ -233,8 +236,7 @@ body{
 </style>
 </head>
 <body>
-  <title>MyOS Desktop</title>
-
+ 
 
 <div class="filemanager-window">
 
